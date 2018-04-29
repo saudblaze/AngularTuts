@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/ng_includes.js"></script>
+    <link href="styles/table.css" rel="stylesheet" />
+</head>
+<body ng-controller="myController">
+    select view : <select ng-model="View">
+        <option value='HTMLtable.html'>table</option>
+        <option value='HTMLlist.html'>list</option>
+    </select>
+    <div ng-include="View">
+
+    </div>
+</body>
+</html>

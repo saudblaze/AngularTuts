@@ -75,22 +75,44 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomFilter6.html" />
+    <Content Include="CustomServices10.html" />
+    <Content Include="EmployeeServices.asmx" />
     <Content Include="Example1.html" />
     <Content Include="Example2.html" />
     <Content Include="Filters5.html" />
     <Content Include="HandlingEvents4.html" />
+    <Content Include="HTMLlist.html" />
+    <Content Include="HTMLtable.html" />
     <Content Include="images\IMG_20170901_135114266.jpg" />
+    <Content Include="ng_includes8.html" />
     <Content Include="ng_Repeat3.html" />
+    <Content Include="ng_show_hide7.html" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\CustomFilter.js" />
+    <Content Include="Scripts\CustomServices.js" />
     <Content Include="Scripts\Example2.js" />
     <Content Include="Scripts\Filters.js" />
     <Content Include="Scripts\HandlingEvents.js" />
+    <Content Include="Scripts\ng_includes.js" />
     <Content Include="Scripts\ng_Repeat.js" />
+    <Content Include="Scripts\ng_show_hide.js" />
+    <Content Include="Scripts\OnlyFilters.js" />
+    <Content Include="Scripts\Scroll11.js" />
+    <Content Include="Scripts\StringProcessService10.js" />
+    <Content Include="Scripts\WebService.js" />
+    <Content Include="Scroll11.html" />
     <Content Include="styles\table.css" />
     <Content Include="Web.config" />
+    <Content Include="WebService9.html" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeServices.asmx.cs">
+      <DependentUpon>EmployeeServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

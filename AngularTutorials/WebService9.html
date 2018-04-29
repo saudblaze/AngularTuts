@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/WebService.js"></script>
+    <link href="styles/table.css" rel="stylesheet" />
+</head>
+<body ng-controller="myController">
+    {{ error }}
+    <br /><br />
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender           </th>
+                <th>Salary           </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr ng-repeat="employee in employee ">
+
+
+                <td>{{ employee.Id  }}</td>
+                <td>{{ employee.Name  }}</td>
+                <td>{{ employee.Gender }}</td>
+                <td>{{ employee.Salary }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

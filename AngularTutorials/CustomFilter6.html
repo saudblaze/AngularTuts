@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/CustomFilter.js"></script>
+    <script src="Scripts/OnlyFilters.js"></script>
+    <link href="styles/table.css" rel="stylesheet" />
+</head>
+<body ng-controller="myController">
+    
+    <table>
+        <thead>
+            <tr>
+                <th >Name               </th>
+                <th >Date Of Birth      </th>
+                <th >Gender             </th>                
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr ng-repeat="employee in employee ">
+
+                <!--<tr ng-repeat="employee in employee | orderBy:sortColumn:reverseSort">-->
+                <td>{{ employee.name  }}</td>
+                <td>{{ employee.dateofbirth  }}</td>
+                <td>{{ employee.gender  | gender }}</td>                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

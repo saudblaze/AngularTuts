@@ -1,17 +1,17 @@
 ﻿table {
-border-collapse:collapse;
-font-family:Arial;
+    border-collapse: collapse;
+    font-family: Arial;
 }
 
 td {
-border:1px solid black;
-padding :5px;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 
 th {
     border: 1px solid black;
-    padding: 5px;    
+    padding: 5px;
 }
 
 .arrow-up {
@@ -20,7 +20,7 @@ th {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 10px solid black;
-    display:inline-block;
+    display: inline-block;
 }
 
 .arrow-down {
@@ -30,4 +30,11 @@ th {
     border-right: 5px solid transparent;
     border-top: 10px solid black;
     display: inline-block;
+}
+
+.div400 {
+    width: 400px;
+    border: 1px solid black;
+    font-size: large;
+    padding: 10px;
 }
