@@ -1,0 +1,43 @@
+﻿
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>   
+    <script src="Scripts/ng_Repeat.js"></script>
+</head>
+<body ng-controller="myController">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>gender</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in Employeelist">
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.age }}</td>
+                    <td>{{ employee.gender }}</td>
+                    <td>{{ employee.phone }}</td>
+                </tr>
+            </tbody>
+        </table>    
+    <div>
+
+        <ul>
+            <li ng-repeat="country in Countrylist">
+                {{ country.name }} - index = {{ $index }}
+                <ul>
+                    <li ng-repeat="city in country.cities ">
+                        {{ city.name }} - index = {{ $index }} parentIndex = {{ $parent.$index }}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

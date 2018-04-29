@@ -75,6 +75,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Example1.html" />
+    <Content Include="Example2.html" />
+    <Content Include="Filters5.html" />
+    <Content Include="HandlingEvents4.html" />
+    <Content Include="images\IMG_20170901_135114266.jpg" />
+    <Content Include="ng_Repeat3.html" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Example2.js" />
+    <Content Include="Scripts\Filters.js" />
+    <Content Include="Scripts\HandlingEvents.js" />
+    <Content Include="Scripts\ng_Repeat.js" />
+    <Content Include="styles\table.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

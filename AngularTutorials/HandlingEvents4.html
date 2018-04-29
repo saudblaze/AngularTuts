@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/HandlingEvents.js"></script>
+    <link href="styles/table.css" rel="stylesheet" />
+</head>
+<body ng-controller="myController">
+    <table>
+        <thead>
+            <tr>
+                <th>technology</th>
+                <th>likes</th>
+                <th>Dislikes</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in technologies">
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.likes }}</td>
+                <td>{{ employee.dislikes }}</td>
+                <td>
+                    <input type="button" value="likes" ng-click="IncreatementLikes(employee)" />
+                    <input type="button" value="Dislikes" ng-click="IncreatementDislikes(employee)" />
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
