@@ -1,0 +1,19 @@
+﻿<div>
+    Student search page
+</div>
+<table border="1" style="border-collapse:collapse">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>RollNo</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tr ng-repeat="student in students">
+        <td>{{student.ID}}</td>
+        <td>{{student.StudentName}}</td>
+        <td>{{student.RollNo}}</td>
+        <td>{{student.city}}</td>
+    </tr>
+</table>

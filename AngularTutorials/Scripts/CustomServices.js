@@ -3,7 +3,7 @@
 
 var myApp = angular.module("myModule", [])
     .controller("myController", function ($scope, stringServices) {
-
+        debugger;
         $scope.tranformString = function (input) {
             //if (!input) {
             //    return input;

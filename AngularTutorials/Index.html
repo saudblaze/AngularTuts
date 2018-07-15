@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Demo123">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <!--<script src="Scripts/angular-route.js"></script>-->
+    <script src="Scripts/angular-ui-router.js"></script>
+    <link href="Routing/style.css" rel="stylesheet" />
+    <script src="Routing/script.js"></script>
+    <base href="/" />
+</head>
+<body >
+    <table>
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    WebSite Header
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a href="#/home">Home</a>
+                <a href="#/courses">Courses</a>
+                <a href="#/Students">Students</a>
+            </td>
+            <td class="mainContent">
+                <!--Home/course/student main course to be injected-->
+                <ng-view></ng-view>
+                <!--<ui-view></ui-view>-->
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Website Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

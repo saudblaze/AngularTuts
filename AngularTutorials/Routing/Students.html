@@ -1,0 +1,21 @@
+﻿<h1>
+    {{message}}
+</h1>
+<div>
+    name : <input type="text" ng-model="name"/>
+    <input type="button" ng-click="GetStudentSearch()" value="Search" />
+
+</div>
+<div>
+    this is your course partial template
+    <ul ng-repeat="stu in students">
+        <li>
+            <a href="#/StudentsDetails/{{stu.ID}}">
+                {{stu.StudentName}}
+            </a>
+        </li>
+    </ul>
+
+    <input type="button" ng-click="DataReload()" value="Reload" />
+
+</div>
