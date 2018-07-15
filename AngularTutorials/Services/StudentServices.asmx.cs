@@ -24,7 +24,7 @@ namespace AngularTutorials.Services
         [WebMethod]
         public void GetStudents()
         {
-            System.Threading.Thread.Sleep(5000);
+            //System.Threading.Thread.Sleep(5000);
             List<Students> objStudents = new List<Students>();
             string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
